@@ -5,8 +5,13 @@ import domain.Exercise;
 public class TestResult {
 
     public static void main(String[] args) {
+        
+        System.out.println("Enter your number: ");
 
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        Scanner in1 = new Scanner(System.in);
+
+        int number = in1.nextInt(),originalNumber = number, remainder = 0, result = 0;
+
+        Calculate(number);
     }
 }
