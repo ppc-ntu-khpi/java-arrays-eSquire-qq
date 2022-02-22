@@ -1,8 +1,10 @@
 package domain;
 
 public class Exercise {
-    public static void Calculate(int number, int originalNumber, int remainder, int result){
-        
+    public static void Calculate(int number){
+
+        int originalNumber = number, remainder = 0, result = 0;
+
         while (originalNumber != 0)
         {
             remainder = originalNumber % 10;
